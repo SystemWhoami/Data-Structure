@@ -38,12 +38,11 @@ void options(int choice, int &size, int *vector){
         }
 }
 
-void menu(int &size, int *vector, int &choice){
+void menu(int &size, int *vector, int choice){
         cout << "Choose an option below: " << endl;
         cout << "1 | Create a vector;" << endl;
         cout << "2 | Display the vector;" << endl;
-        cout << "0 | Exit;" << endl;
-        cout << ">> ";
+        cout << "0 | Exit;" << endl;        cout << ">> ";
         cin >> choice;
         while(choice<0 or choice>2) {
                 cout << "Error" << endl;
