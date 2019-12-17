@@ -68,11 +68,9 @@ void Option(Stack &S, int Choice){
                 break;
         case 1:
                 StackUp(S);
-                system("clear");
                 break;
         case 2:
                 Unstack(S);
-                system("clear");
                 break;
         case 3:
                 AccessTop(S);
