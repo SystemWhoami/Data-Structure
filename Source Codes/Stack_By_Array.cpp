@@ -5,8 +5,7 @@ using namespace std;
 struct Stack {
         int Top;
         int Elements[Max];
-}; Stack S;
-
+};
 
 bool Check(Stack &S){
         if(S.Top==-1) {
@@ -25,7 +24,7 @@ void StackUp(Stack &S){
         if(Check(S)==false){
                 S.Elements[S.Top]=Value;
                 S.Top++;
-                cout << Value << "Piled up!";
+                cout << Value << " Piled up!" << endl;
         }
         else{
                 cout << "Full Stack, Care Will Fall!" << endl;
@@ -53,7 +52,6 @@ void AccessTop(Stack S){
 
 void Display(Stack S){
         cout << "Your stack is:" << endl;
-        cout << "\t" << endl;
         for(int i=S.Top-1; i>=0; i--) {
                 cout << S.Elements[i] << endl;
         }
